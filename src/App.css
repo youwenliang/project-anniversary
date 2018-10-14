@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #d59399;
+}
+
+#root {
+  height: 100%;
+}
+
+#root::after {
+  content: "";
+  background-image: url('./pink_rice.png');
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90vh;
+  display: grid;
+  grid-gap: 10px;
+  background: #ffffff;
+  grid-template-columns: auto auto auto;
+  border: 10px solid #ffffff;
+  box-shadow: rgba(0,0,0,.2) 0px 4px 16px;
+  z-index: 1;
+}
+
+.center {
+  background: #d59399;
+}
+
+.item {
+  transition: all .6s ease-in-out;
+}
+
+.item.center:hover {
+  transform: scale(1);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item.rotate {
+  transform: rotateY(180deg);
+}
+
+.item.rotate:hover {
+  transform: scale(1.05) rotateY(180deg);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.modalImg {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+}
+
+.modalDescription + button {
+  display: none;
+}
+
+.modalDescription {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0 .5rem;
+  user-select: none;
+}
+
+@media screen and (max-width: 30em) {
+  .container {
+    border: 5px solid #ffffff;
+    grid-gap: 5px;
+  }
+  .styles_modal__gNwvD {
+    padding: 0.2rem 0.2rem 1.2rem 0.2rem;
+  }
+}
+
+.styles_overlay__CLSq- {
+  background-color: rgba(213,147,153,.75);
+}
