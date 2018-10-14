@@ -1,7 +1,7 @@
 {
   "main.css": "/project-anniversary/static/css/main.992ec375.chunk.css",
-  "main.js": "/project-anniversary/static/js/main.8b693f28.chunk.js",
-  "main.js.map": "/project-anniversary/static/js/main.8b693f28.chunk.js.map",
+  "main.js": "/project-anniversary/static/js/main.851436f5.chunk.js",
+  "main.js.map": "/project-anniversary/static/js/main.851436f5.chunk.js.map",
   "static/js/1.85147269.chunk.js": "/project-anniversary/static/js/1.85147269.chunk.js",
   "static/js/1.85147269.chunk.js.map": "/project-anniversary/static/js/1.85147269.chunk.js.map",
   "runtime~main.js": "/project-anniversary/static/js/runtime~main.050e8154.js",
@@ -84,6 +84,6 @@
   "static/media/marknita9-Nov.2017_義大利之旅.jpg": "/project-anniversary/static/media/marknita9-Nov.2017_義大利之旅.f4b6caff.jpg",
   "static/css/main.992ec375.chunk.css.map": "/project-anniversary/static/css/main.992ec375.chunk.css.map",
   "index.html": "/project-anniversary/index.html",
-  "precache-manifest.d98f6542f14fc1ebaeec6415dc62a2b6.js": "/project-anniversary/precache-manifest.d98f6542f14fc1ebaeec6415dc62a2b6.js",
+  "precache-manifest.c67cdbb9db3c6731479dcf4b67b64533.js": "/project-anniversary/precache-manifest.c67cdbb9db3c6731479dcf4b67b64533.js",
   "service-worker.js": "/project-anniversary/service-worker.js"
 }
