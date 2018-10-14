@@ -320,7 +320,7 @@ self.__precacheManifest = [
     "url": "/project-anniversary/static/media/marknita9-Nov.2017_義大利之旅.f4b6caff.jpg"
   },
   {
-    "revision": "b7f5b35856b5d3dffac488c7c358cfbf",
+    "revision": "2dfb184a6385c86bcbe78d1382126bd9",
     "url": "/project-anniversary/index.html"
   }
 ];
