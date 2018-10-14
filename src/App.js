@@ -3,6 +3,7 @@ import logo from './logo.png';
 import './App.css';
 import $ from 'jquery';
 import Modal from 'react-responsive-modal';
+import loadImage from 'image-promise';
 
 function importAll(r) {
   return r.keys().map(r);
@@ -16,7 +17,26 @@ class App extends Component {
     $(window).resize(function(){
       $('.container').height($('.container').width());
     })
-    console.log(images);
+    var updateImages = [];
+    for(var i = 0; i < images.length; i++){
+      updateImages[i] = images[i].replace('/static/media', '/images');
+      var number = updateImages[i].split('.')[2];
+      updateImages[i] = updateImages[i].replace(number+'.', '');
+    }
+    console.log(updateImages);
+    loadImage(updateImages)
+    .then(function (allImgs) {
+      console.log(allImgs.length, 'images loaded!', allImgs);
+      setTimeout(function(){
+        $('.loading').addClass('hide');
+      },800);
+    })
+    .catch(function (err) {
+      console.error('One or more images have failed to load :(');
+      console.error(err.errored);
+      console.info('But these loaded fine:');
+      console.info(err.loaded);
+    });
   }
   render() {
     var center = {
@@ -29,6 +49,10 @@ class App extends Component {
     }
     return (
       <div className="App">
+        <div className="loading">
+          <img src={logo} width="50%"/>
+          <p>loading photos...</p>
+        </div>
         <div className="container">
           <Photo id="1"/>
           <Photo id="2"/>
@@ -55,7 +79,7 @@ class Photo extends Component {
   };
  
   onOpenModal = (a) => {
-    var d = a.split('-')[1].replace('.jpg','').replace('_',' ');
+    var d = a.split('-')[2].replace('.jpg','').replace('_',' ');
     this.setState({ open: true, img: a, description: d });
   };
  
@@ -76,7 +100,7 @@ class Photo extends Component {
 
   render() {
     var url = images[Math.floor((Math.random() * imagesAmount))].replace('/static/media', '/images');
-    var number = url.split('.')[3];
+    var number = url.split('.')[2];
     url = url.replace(number+'.', '');
     
     var img = {
