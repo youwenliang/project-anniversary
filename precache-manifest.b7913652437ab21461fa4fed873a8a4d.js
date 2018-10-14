@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/project-anniversary/static/media/marknita40-Apr.2018_沖繩參加婚禮.07614f76.jpg"
   },
   {
-    "revision": "c3cc690a90f1d5007cc3",
+    "revision": "a7641b0fa65e73af12f1",
     "url": "/project-anniversary/static/css/main.3eac336c.chunk.css"
   },
   {
@@ -160,8 +160,8 @@ self.__precacheManifest = [
     "url": "/project-anniversary/static/media/marknita4-Nov.2017_義大利之旅.9b0e231c.jpg"
   },
   {
-    "revision": "c3cc690a90f1d5007cc3",
-    "url": "/project-anniversary/static/js/main.c3cc690a.chunk.js"
+    "revision": "a7641b0fa65e73af12f1",
+    "url": "/project-anniversary/static/js/main.a7641b0f.chunk.js"
   },
   {
     "revision": "cadafe5e3931c6c8eb14559cdb20ccd4",
@@ -320,7 +320,7 @@ self.__precacheManifest = [
     "url": "/project-anniversary/static/media/marknita9-Nov.2017_義大利之旅.f4b6caff.jpg"
   },
   {
-    "revision": "4675648af875a8efd773b77c4c2fa14f",
+    "revision": "b7f5b35856b5d3dffac488c7c358cfbf",
     "url": "/project-anniversary/index.html"
   }
 ];
