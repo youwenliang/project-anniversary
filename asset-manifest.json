@@ -1,13 +1,13 @@
 {
   "main.css": "/project-anniversary/static/css/main.320926df.chunk.css",
-  "main.js": "/project-anniversary/static/js/main.55476aa8.chunk.js",
-  "main.js.map": "/project-anniversary/static/js/main.55476aa8.chunk.js.map",
+  "main.js": "/project-anniversary/static/js/main.ee50ca2c.chunk.js",
+  "main.js.map": "/project-anniversary/static/js/main.ee50ca2c.chunk.js.map",
   "static/js/1.85147269.chunk.js": "/project-anniversary/static/js/1.85147269.chunk.js",
   "static/js/1.85147269.chunk.js.map": "/project-anniversary/static/js/1.85147269.chunk.js.map",
   "runtime~main.js": "/project-anniversary/static/js/runtime~main.050e8154.js",
   "runtime~main.js.map": "/project-anniversary/static/js/runtime~main.050e8154.js.map",
   "static/media/marknita47-May.2018_倫敦重遊.jpg": "/project-anniversary/static/media/marknita47-May.2018_倫敦重遊.d226b49b.jpg",
-  "static/media/logo.png": "/project-anniversary/static/media/logo.7cb95c40.png",
+  "static/media/logo.png": "/project-anniversary/static/media/logo.44de52a4.png",
   "static/media/marknita1-Nov.2017_義大利之旅.jpg": "/project-anniversary/static/media/marknita1-Nov.2017_義大利之旅.44b12a05.jpg",
   "static/media/marknita10-Nov.2017_義大利之旅.jpg": "/project-anniversary/static/media/marknita10-Nov.2017_義大利之旅.e3521c16.jpg",
   "static/media/marknita11-Nov.2017_義大利之旅.jpg": "/project-anniversary/static/media/marknita11-Nov.2017_義大利之旅.bee961e8.jpg",
@@ -84,6 +84,6 @@
   "static/media/marknita9-Nov.2017_義大利之旅.jpg": "/project-anniversary/static/media/marknita9-Nov.2017_義大利之旅.f4b6caff.jpg",
   "static/css/main.320926df.chunk.css.map": "/project-anniversary/static/css/main.320926df.chunk.css.map",
   "index.html": "/project-anniversary/index.html",
-  "precache-manifest.80ce76de2636f695d46e5bad48ca5535.js": "/project-anniversary/precache-manifest.80ce76de2636f695d46e5bad48ca5535.js",
+  "precache-manifest.a625e60d83202a7a61ef2adacae41b54.js": "/project-anniversary/precache-manifest.a625e60d83202a7a61ef2adacae41b54.js",
   "service-worker.js": "/project-anniversary/service-worker.js"
 }
