@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="loading">
-          <img src={logo} width="50%"/>
+          <img src={logo} width="80%"/>
           <p>loading photos...</p>
         </div>
         <div className="container">

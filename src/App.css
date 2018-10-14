@@ -125,13 +125,17 @@ html, body {
   user-select: none;
 }
 
+* {
+  user-select: none;
+}
+
 @media screen and (max-width: 30em) {
   .container {
     border: 5px solid #ffffff;
     grid-gap: 5px;
   }
   .styles_modal__gNwvD {
-    padding: 0.2rem 0.2rem 1.2rem 0.2rem;
+    padding: 0.6rem 0.6rem 1.2rem 0.6rem;
   }
 }
 
