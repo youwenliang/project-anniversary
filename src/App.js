@@ -75,7 +75,7 @@ class Photo extends Component {
   }
 
   render() {
-    var url = images[Math.floor((Math.random() * imagesAmount))].replace('/static/media', './images');
+    var url = images[Math.floor((Math.random() * imagesAmount))].replace('/static/media', '/images');
     var number = url.split('.')[3];
     url = url.replace(number+'.', '');
     
