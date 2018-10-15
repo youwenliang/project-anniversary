@@ -14,8 +14,10 @@ const imagesAmount = images.length;
 class App extends Component {
   componentDidMount(){
     $('.container').height($('.container').width());
+    $('.text').height($('.text').width());
     $(window).resize(function(){
       $('.container').height($('.container').width());
+      $('.text').height($('.text').width());
     })
     var updateImages = [];
     for(var i = 0; i < images.length; i++){
@@ -29,6 +31,16 @@ class App extends Component {
       console.log(allImgs.length, 'images loaded!', allImgs);
       setTimeout(function(){
         $('.loading').addClass('hide');
+
+        $('.center').click(function(e){
+          e.stopPropagation();
+          $('.container').addClass('rotate');
+          $('.text').addClass('rotate');
+        })
+        $('#root').click(function(e){
+          $('.container').removeClass('rotate');
+          $('.text').removeClass('rotate');
+        });
       },800);
     })
     .catch(function (err) {
@@ -49,9 +61,13 @@ class App extends Component {
     }
     return (
       <div className="App">
+        <div className="text">
+          <p>給 Nita</p>
+          <p className="small">(點擊任何處回到瀏覽照片)</p>
+        </div>
         <div className="loading">
           <img src={logo} width="80%"/>
-          <p>loading photos...</p>
+          <p className="saving">loading photos<span>.</span><span>.</span><span>.</span></p>
         </div>
         <div className="container">
           <Photo id="1"/>
@@ -79,7 +95,7 @@ class Photo extends Component {
   };
  
   onOpenModal = (a) => {
-    var d = a.split('-')[2].replace('.jpg','').replace('_',' ');
+    var d = a.split('mark')[1].split('-')[1].replace('.jpg','').replace('_',' ');
     this.setState({ open: true, img: a, description: d });
   };
  
