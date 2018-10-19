@@ -61,7 +61,8 @@ class App extends Component {
     }
     var margin = {
       paddingBottom: "0",
-      marginBottom: "0"
+      marginBottom: "0",
+      textAlign: "center",
     }
     return (
       <div className="App">
