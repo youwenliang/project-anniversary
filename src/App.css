@@ -66,6 +66,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .text {
@@ -86,6 +87,9 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 1;
+  outline: 5px solid #d59399;
+  outline-offset: -15px;
 }
 
 .text p {
@@ -96,10 +100,14 @@ html, body {
   white-space: pre-wrap;
 }
 
+
+
 .small {
   font-size: 14px;
   font-weight: 500 !important; 
   letter-spacing: .5px;
+  padding-top: 0 !important;
+  margin-top: 0;
 }
 
 .text.rotate {
@@ -181,6 +189,14 @@ html, body {
   }
   .styles_modal__gNwvD {
     padding: 0.6rem 0.6rem 1.2rem 0.6rem;
+  }
+
+  .text p {
+    font-size: 13px;
+    padding: 16px 0;
+  }
+  .modalDescription {
+    font-size: 13px;
   }
 }
 
